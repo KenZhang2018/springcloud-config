@@ -9,10 +9,7 @@ spring:
   #自定义链接
   jpa:
       show-sql: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+
 server:
   port: 8081
 env: test3
