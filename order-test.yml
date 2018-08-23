@@ -13,3 +13,6 @@ spring:
 server:
   port: 8081
 env: test2
+girl:
+  name: lili
+  age:18
