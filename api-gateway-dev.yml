@@ -12,7 +12,7 @@ zuul:
 #    - /product/product/list
 #    - /myProduct/product/list
 #    simple writing
-    - /**/product/list
+#     - /**/product/list
 
 management:
   endpoints:
