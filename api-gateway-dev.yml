@@ -1,0 +1,21 @@
+zuul:
+  routes:
+#   simple writing
+#    product: /myProduct/**
+#    /myProduct/product/list -> /product/product/list
+    aa:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+#  forbid visit
+  ignored-patterns:
+#    - /product/product/list
+#    - /myProduct/product/list
+#    simple writing
+    - /**/product/list
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
